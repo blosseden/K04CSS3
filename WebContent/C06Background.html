@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C06Background.html</title>
+<style>
+    #back1 div{
+        width: 80%; height:400px;
+        background-image:url('./images/3.png');
+        background-repeat:no-repeat;
+    }
+    #back1 div:first-child {
+        border:1px solid red;
+    }
+    #back1 div:last-child {
+        border:1px solid blue;
+    }
+
+    #back2 {
+        background-image:url('./images/55.png');
+        background-repeat:no-repeat;
+        background-position:20px 40px;
+        background-color:yellow;
+        width:400px; height:250px;
+    }
+    /*
+    background 속성값을 동시에 적용한다 여러가지 속성값을
+    순서없이 나열하면 되고 띄어쓰기만 주의하면 된다.
+    */
+    #back3 {
+        background:url("./images/banana.png") 20px 40px
+        yellow repeat-x;
+
+        width:400px; height:250px;
+    }
+</style>
+</head>
+<body>
+    <h2>배경관련 css 속성</h2>
+
+    <div>
+        <h3>배경색 지정</h3>
+
+        <div style="background-color:#FF0000;">
+            블럭엘리먼트
+        </div>
+        <SPAN STYLE="background-color: #00ff00;">
+            인라인엘리먼트<br /> 인라인엘리먼트
+
+        </SPAN>
+    </div>
+    <div id="back1">
+        |<div>안농 나는 뚱이얌</div>
+        <div>반가워~~~</div>
+    </div>
+
+    <div id="back2">
+        div태그는 division의 줄임말입니다
+    </div>
+
+    <div id="back3">
+        background속성을 동시에 사용하기
+    </div>
+</body>
+</html>
